@@ -1,4 +1,5 @@
 import {Entity, model, property} from '@loopback/repository';
+import {OrderItem} from './order-item.model';
 
 @model()
 export class Order extends Entity {
@@ -22,8 +23,7 @@ export class Order extends Entity {
     type: 'array',
     itemType: 'object',
   })
-  items?: object[];
-
+  items?: OrderItem[];
 
   constructor(data?: Partial<Order>) {
     super(data);

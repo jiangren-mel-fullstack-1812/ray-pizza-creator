@@ -12,7 +12,6 @@ export class OrderItem extends Model {
   })
   quantity?: number;
 
-
   constructor(data?: Partial<OrderItem>) {
     super(data);
   }
